@@ -4,7 +4,7 @@ Some examples for SpecificationArgumentResolver with Spring Boot 3
 This is a simple Spring Boot project which presents [Specification Argument Resolver library](https://github.com/tkaczmarzyk/specification-arg-resolver).
 
 It is an executable jar with embedded H2 db, so just build it with Maven and explore the API.
-It also configured to be compiled as native image. It may be built as binary image or docker image:
+It is also configured to be compiled as native image. It may be built as executable or docker image:
 * binary image - `mvn -Pnative native:compile` (should be visible as executable file in `target` directory) 
 * docker image - `mvn -Pnative spring-boot:build-image`
 (Tested with maven 3.8.7 and GraalVM 22.3.0 for java 17 SDK version)
