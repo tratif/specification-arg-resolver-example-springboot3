@@ -5,14 +5,25 @@ This is a simple Spring Boot project which presents [Specification Argument Reso
 
 It is an executable jar with embedded H2 db, so just build it with Maven and explore the API.
 It is also configured to be compiled as native image.
+
+Build
+=====
+
+How to build the app:
+* jar
+  * executable - `mvn clean install`
+  * docker image `mvn spring-boot:build-image`
+* native
+  * executable - `mvn -Pnative native:compile` (should be visible as executable file in `target` directory) 
+  * docker image - `mvn -Pnative spring-boot:build-image`
 It is recommended to run tests against native image, there might be a situation where some tests may fail:
 * `mvn -PnativeTest test`
 
-Project may be built as binary (executable) or docker image.
-* binary - `mvn -Pnative native:compile` (should be visible as executable file in `target` directory) 
-* docker - `mvn -Pnative spring-boot:build-image`
-(Tested with maven 3.8.7 and GraalVM 22.3.0 for java 17 SDK version)
+(Native image tested with maven 3.8.7 and GraalVM 22.3.0 for java 17 SDK version)
 
+
+Usage examples
+==============
 You will find some samples below:
 
 1. Get all customers:
