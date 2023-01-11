@@ -16,7 +16,7 @@ How to build the app:
 * native
   * executable - `mvn -Pnative native:compile` (should be visible as executable file in `target` directory) 
   * docker image - `mvn -Pnative spring-boot:build-image`
-It is recommended to run tests against native image, there might be a situation where some tests may fail:
+It is recommended to run tests against native image to be sure, that the native image contains all the code that is required at runtime:
 * `mvn -PnativeTest test`
 
 (Native image tested with maven 3.8.7 and GraalVM 22.3.0 for java 17 SDK version)
