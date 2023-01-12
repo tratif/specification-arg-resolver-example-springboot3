@@ -1,4 +1,4 @@
-package net.kaczmarzyk.example.domain;
+package com.tratif.example.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;

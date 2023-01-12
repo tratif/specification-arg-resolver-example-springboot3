@@ -1,8 +1,7 @@
-package net.kaczmarzyk.example;
+package com.tratif.example;
 
 import java.util.List;
 
-import net.kaczmarzyk.spring.data.jpa.nativeimage.SpecificationArgumentResolverHintRegistrar;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -15,7 +14,7 @@ import net.kaczmarzyk.spring.data.jpa.web.SpecificationArgumentResolver;
 
 
 @SpringBootConfiguration
-@ComponentScan(basePackages="net.kaczmarzyk")
+@ComponentScan(basePackages="com.tratif")
 @EnableAutoConfiguration
 public class Application implements WebMvcConfigurer {
 

@@ -1,8 +1,8 @@
-package net.kaczmarzyk.example.web;
+package com.tratif.example.web;
 
 import org.springframework.data.jpa.domain.Specification;
 
-import net.kaczmarzyk.example.domain.Customer;
+import com.tratif.example.domain.Customer;
 import net.kaczmarzyk.spring.data.jpa.domain.Equal;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Spec;
 

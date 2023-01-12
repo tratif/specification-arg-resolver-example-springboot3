@@ -1,4 +1,4 @@
-package net.kaczmarzyk.example;
+package com.tratif.example;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -7,7 +7,7 @@ import jakarta.annotation.PostConstruct;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
-import net.kaczmarzyk.example.domain.Customer;
+import com.tratif.example.domain.Customer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

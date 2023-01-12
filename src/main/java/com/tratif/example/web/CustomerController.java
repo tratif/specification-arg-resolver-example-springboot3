@@ -1,7 +1,7 @@
-package net.kaczmarzyk.example.web;
+package com.tratif.example.web;
 
-import net.kaczmarzyk.example.domain.Customer;
-import net.kaczmarzyk.example.repo.CustomerRepository;
+import com.tratif.example.domain.Customer;
+import com.tratif.example.repo.CustomerRepository;
 import net.kaczmarzyk.spring.data.jpa.domain.DateBefore;
 import net.kaczmarzyk.spring.data.jpa.domain.DateBetween;
 import net.kaczmarzyk.spring.data.jpa.domain.Like;

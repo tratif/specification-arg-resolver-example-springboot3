@@ -1,4 +1,4 @@
-package net.kaczmarzyk.example.web;
+package com.tratif.example.web;
 
 import net.kaczmarzyk.spring.data.jpa.domain.LikeIgnoreCase;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Or;

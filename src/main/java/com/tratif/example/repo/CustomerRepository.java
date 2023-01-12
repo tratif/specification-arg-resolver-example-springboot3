@@ -1,6 +1,6 @@
-package net.kaczmarzyk.example.repo;
+package com.tratif.example.repo;
 
-import net.kaczmarzyk.example.domain.Customer;
+import com.tratif.example.domain.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.PagingAndSortingRepository;

@@ -1,7 +1,7 @@
-package net.kaczmarzyk.example;
+package com.tratif.example;
 
 import jakarta.transaction.Transactional;
-import net.kaczmarzyk.example.repo.CustomerRepository;
+import com.tratif.example.repo.CustomerRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

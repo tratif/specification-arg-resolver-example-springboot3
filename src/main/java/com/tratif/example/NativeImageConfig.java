@@ -1,4 +1,4 @@
-package net.kaczmarzyk.example;
+package com.tratif.example;
 
 import net.kaczmarzyk.spring.data.jpa.nativeimage.SpecificationArgumentResolverHintRegistrar;
 import org.springframework.context.annotation.Configuration;
