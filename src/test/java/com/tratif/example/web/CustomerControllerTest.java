@@ -1,7 +1,7 @@
-package net.kaczmarzyk.example.web;
+package com.tratif.example.web;
 
-import net.kaczmarzyk.example.IntegrationTestBase;
-import net.kaczmarzyk.example.domain.Customer;
+import com.tratif.example.IntegrationTestBase;
+import com.tratif.example.domain.Customer;
 import org.junit.jupiter.api.Test;
 
 import java.util.Calendar;
