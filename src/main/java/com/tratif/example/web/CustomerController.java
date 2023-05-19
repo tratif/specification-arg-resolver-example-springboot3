@@ -2,8 +2,8 @@ package com.tratif.example.web;
 
 import com.tratif.example.domain.Customer;
 import com.tratif.example.repo.CustomerRepository;
-import net.kaczmarzyk.spring.data.jpa.domain.DateBefore;
-import net.kaczmarzyk.spring.data.jpa.domain.DateBetween;
+import net.kaczmarzyk.spring.data.jpa.domain.Between;
+import net.kaczmarzyk.spring.data.jpa.domain.LessThan;
 import net.kaczmarzyk.spring.data.jpa.domain.Like;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.And;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Or;
@@ -60,14 +60,14 @@ public class CustomerController {
     
     @GetMapping(params = { "registeredBefore" })
     public Iterable<Customer> findCustomersRegisteredBefore(
-            @Spec(path = "registrationDate", params = "registeredBefore", config = "yyyy-MM-dd", spec = DateBefore.class) NotDeletedCustomerSpecification spec) {
+            @Spec(path = "registrationDate", params = "registeredBefore", config = "yyyy-MM-dd", spec = LessThan.class) NotDeletedCustomerSpecification spec) {
 
         return customerRepo.findAll(spec);
     }
     
     @GetMapping(params = { "registeredAfter", "registeredBefore" })
     public Iterable<Customer> findCustomersByRegistrationDate(
-            @Spec(path = "registrationDate", params = {"registeredAfter", "registeredBefore"}, config = "yyyy-MM-dd", spec = DateBetween.class) NotDeletedCustomerSpecification spec) {
+            @Spec(path = "registrationDate", params = {"registeredAfter", "registeredBefore"}, config = "yyyy-MM-dd", spec = Between.class) NotDeletedCustomerSpecification spec) {
 
         return customerRepo.findAll(spec);
     }
@@ -81,7 +81,7 @@ public class CustomerController {
     
     @GetMapping(value = "", params = { "registeredBefore", "name" })
     public Iterable<Customer> findCustomersByRegistrationDateAndName(
-            @Spec(path="registrationDate", params="registeredBefore", spec=DateBefore.class) NotDeletedCustomerSpecification registrationDateSpec,
+            @Spec(path="registrationDate", params="registeredBefore", spec= LessThan.class) NotDeletedCustomerSpecification registrationDateSpec,
             @Or({@Spec(params="name", path="firstName", spec=Like.class),
                 @Spec(params="name", path="lastName", spec=Like.class)}) NotDeletedCustomerSpecification nameSpec) {
 
